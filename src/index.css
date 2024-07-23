@@ -1,0 +1,109 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+
+@font-face {
+  font-family: UrbanistFont-ExtraLight;
+  src: url('/fonts/Urbanist/static/Urbanist-ExtraLight.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-Thin;
+  src: url('/fonts/Urbanist/static/Urbanist-Thin.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-Light;
+  src: url('/fonts/Urbanist/static/Urbanist-Light.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-Regular;
+  src: url('/fonts/Urbanist/static/Urbanist-Regular.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-Medium;
+  src: url('/fonts/Urbanist/static/Urbanist-Medium.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-SemiBold;
+  src: url('/fonts/Urbanist/static/Urbanist-SemiBold.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-Bold;
+  src: url('/fonts/Urbanist/static/Urbanist-Bold.ttf');
+}
+
+@font-face {
+  font-family: UrbanistFont-ExtraBold;
+  src: url('/fonts/Urbanist/static/Urbanist-ExtraBold.ttf');
+}
+
+
+* {
+  box-sizing: border-box;
+  padding: 0;
+  margin: 0;
+  scroll-behavior: smooth;
+  font-family: UrbanistFont-Regular, sans-serif;
+}
+
+html,
+body {
+  height: 100%;
+  background-color: #ffffff;
+}
+
+
+.background-image {
+  /* Garante que a imagem cubra todo o fundo */
+  pointer-events: none;
+  /* Impede que a imagem seja selecionada ou pressionada */
+  user-drag: none;
+  /* Desabilita arrastar e soltar em navegadores WebKit */
+  -webkit-user-drag: none;
+  /* Desabilita arrastar e soltar em navegadores WebKit */
+  user-select: none;
+}
+
+
+.text-efeito-hero {
+  opacity: 0.06;
+  background: linear-gradient(171deg, rgba(200, 0, 15, 0.94) 26.07%, rgba(102, 102, 102, 0.00) 102.14%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
+
+.box_hero_animation {
+  animation-name: box_hero;
+  animation-duration: 2s;
+  animation-fill-mode: backwards;
+  animation-iteration-count: infinite;
+  left: inherit;
+}
+
+@keyframes box_hero {
+  0% {
+    transform: translateY(0%);
+  }
+
+  50% {
+    transform: translateY(5%);
+  }
+
+  100% {
+    transform: translateY(0%);
+  }
+}
+
+.text-efeito-escolha {
+  background: linear-gradient(355deg, rgba(255, 255, 255, 0.30) -0.24%, rgba(255, 255, 255, 0.10) 47.54%, rgba(255, 255, 255, 0.00) 80.24%);
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+}
